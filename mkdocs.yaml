@@ -1,0 +1,227 @@
+# +--------------------------------------------------------------------------------------------------------+
+# |                                                                                                        |
+# | This is the main file used by MkDocs to build the pages.                                               |
+# | It contains a lot of information and settings for you to read and use.                                 |
+# | Comments may contain "Read More" URLs to more in-depth documentation about the option for you to read. |
+# |                                                                                                        |
+# | You can check out https://www.mkdocs.org/user-guide/configuration/ for a more detailed explanation of  |
+# | all the options MkDocs offers by default.                                                              |
+# |                                                                                                        |
+# +------------------------------------------------- NOTE -------------------------------------------------+
+# |                                                                                                        |
+# | Some of the options listed here are only available through the usage of Material for MkDocs.           |
+# | Those options will usually have a link to the docs of this Theme and also mention "Material" as name.  |
+# | The actual name of the theme is "Material for MkDocs" and "Material" is used for simplicity reasons.   |
+# |                                                                                                        |
+# +--------------------------------------------------------------------------------------------------------+
+
+site_name: Data Engineering Helper Documentation & Guide
+site_description: 'Central Repo for all thing Data Engineering & Cloud Engineering (GCP & Python)'
+site_author: 'Harry Dunn'
+
+copyright: |
+  &copy; Author: Harry Dunn
+
+nav:
+  - Home: 
+    - index: 'index.md'
+    - Markdown:
+      - index: 'Home/Markdown/index.md'
+      - Getting Started: 'Home/Markdown/getting_started.md'
+      - Cheat Sheet: 'Home/Markdown/basic_cheat_sheet.md'
+      - Examples: 'Home/Markdown/formatting_examples.md'
+    - mkdocs overview:
+      - mkdocs Material: 'Home/mkdocs/mkdocs_material.md'
+      - Mermaid: 'Home/mkdocs/mkdocs_mermaid.md'
+      - Grids: 'Home/mkdocs/mkdocs_grids.md'
+  - Articles: 
+    - index: 'Articles/index.md'
+    - Documentation Series: 
+      - Central Documentation Overview: 'Articles/Documentation Series/central_docs_methodology.md'
+      - Central Documentation Technical Overview: 'Articles/Documentation Series/central_docs_technical.md'
+      - Automating Data Dictionaries: 'Articles/Documentation Series/automating_data_dictionaries.md'
+      - Automating Documentation Creation: 'Articles/Documentation Series/automating_documentation_creation.md'
+    - Dataform: 
+      - Dataform Column Descriptions: 'Articles/Dataform/dataform_column_descriptions.md'
+    - Airflow:
+      - Deploying Airflow locally with Docker: 'Articles/Airflow Composer/running_airflow_locally_docker.md'
+  # - Airflow Helper:
+  # - Dataform Helper:
+  # - GCP Helper:
+  # - Terraform Helper:
+  # - Docker Helper:
+  # - Streamlit Helper:
+  # - Sharepoint Helper:
+
+
+plugins:
+  - mermaid2
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - monorepo
+  - neoteroi.mkdocsoad:
+      use_pymdownx: true
+  - git-revision-date-localized:
+      type: iso_date
+      fallback_to_build_date: true
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+
+exclude_docs: |
+  !.docs/
+  !.docs/*
+  !.assets/
+
+theme:
+  logo: images/logo_white.png
+  name: material
+  custom_dir: overrides
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    # - toc.follow
+  language: en
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  shortcuts:
+    help: 191 # ?
+    next: 78 # n
+    previous: 80 # p
+    search: 83 # s
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: 'material/library'
+    repo: 'material/library'
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/flame-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+      data: octicons/database-16
+      squirell: octicons/squirrel-16
+      goal: octicons/goal-16
+      rocket: octicons/rocket-16
+
+# +--------------------------------------------------------------------------------------------------------+
+# |                                                                                                        |
+# | The "extra" section contains pretty much anything you want, as long as it is a valid key-value pair.   |
+# |                                                                                                        |
+# | Material uses this section for different custom settings that wouldn't fit in the theme section.       |
+# |                                                                                                        |
+# | Read More:                                                                                             |
+# | - https://www.mkdocs.org/user-guide/configuration/#extra                                               |
+# |                                                                                                        |
+# +--------------------------------------------------------------------------------------------------------+
+extra:
+  annotate:
+    json: [.s2]
+  social:
+    - icon: 'fontawesome/brands/github'
+      link: 'https://github.com/harryalexanderdunn/data-engineering-helper'
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - footnotes
+  - md_in_html
+  # - markdown_inline_graphviz
+  # - mdx_truly_sane_lists
+  - plantuml_markdown
+  - tables
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.extra
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.magiclink
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.tilde
+  - neoteroi.cards
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/mkdocsoad.css
+  - stylesheets/cards.css
