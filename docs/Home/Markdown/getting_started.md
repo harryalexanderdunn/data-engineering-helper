@@ -4,10 +4,6 @@
 
 So you have read the intro and agree that documentation as code is the way forward and that writing in markdown will help us get there. Now you want to start using markdown to write your documentation as code. So what is needed to get started? Our current Tech Stack includes VS Code & GitLab, both of these allow for viewing and editing markdown files. But, there are other programs you can use as well.
 
-!!! warning
-
-    Ensure that if you use a program to view/edit markdown files that it is either licensed or runs locally, we cannot store JLR information online without a license.
-
 * VS Code (+ recommended extensions)
   * Markdown All in One
   * markdownlint

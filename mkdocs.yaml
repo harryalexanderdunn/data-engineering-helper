@@ -95,6 +95,8 @@ theme:
     - content.code.copy
     - content.tabs.link
     - content.tooltips
+    - navigation.instant
+    - navigation.instant.progress
     - navigation.footer
     - navigation.indexes
     # - navigation.sections

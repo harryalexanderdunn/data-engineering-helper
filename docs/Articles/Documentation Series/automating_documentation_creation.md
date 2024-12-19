@@ -49,7 +49,7 @@ Ensure you have Just available to run in WSL2. The best was to install just is t
 For documentation automation we will be using lazydocs and the GCP data dictionaries automation code.
 
 1. Ensure you have `lazydocs` within your requirements.txt
-2. Ensure you have a docs folder with the data dictionaries automation script added, [article info](https://central-data-engineering-docs-dot-jlr-dl-complexity.nw.r.appspot.com/JLR%20DDPO%20Articles/Articles/Documentation%20Series/automating_data_dictionaries/) 
+2. Ensure you have a docs folder with the data dictionaries automation script added, [article info](automating_data_dictionaries.md) 
 
 ```
 docs
