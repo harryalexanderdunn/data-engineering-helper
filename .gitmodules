@@ -1,0 +1,6 @@
+[submodule "docs/airflow-helper"]
+	path = docs/airflow-helper
+	url = https://github.com/harryalexanderdunn/airflow-helper.git
+[submodule "docs/dataform-helper"]
+	path = docs/dataform-helper
+	url = https://github.com/harryalexanderdunn/dataform-helper.git

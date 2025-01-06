@@ -22,38 +22,6 @@ site_author: 'Harry Dunn'
 copyright: |
   &copy; Author: Harry Dunn
 
-nav:
-  - Home: 
-    - index: 'index.md'
-    - Markdown:
-      - index: 'Home/Markdown/index.md'
-      - Getting Started: 'Home/Markdown/getting_started.md'
-      - Cheat Sheet: 'Home/Markdown/basic_cheat_sheet.md'
-      - Examples: 'Home/Markdown/formatting_examples.md'
-    - mkdocs overview:
-      - mkdocs Material: 'Home/mkdocs/mkdocs_material.md'
-      - Mermaid: 'Home/mkdocs/mkdocs_mermaid.md'
-      - Grids: 'Home/mkdocs/mkdocs_grids.md'
-  - Articles: 
-    - index: 'Articles/index.md'
-    - Documentation Series: 
-      - Central Documentation Overview: 'Articles/Documentation Series/central_docs_methodology.md'
-      - Central Documentation Technical Overview: 'Articles/Documentation Series/central_docs_technical.md'
-      - Automating Data Dictionaries: 'Articles/Documentation Series/automating_data_dictionaries.md'
-      - Automating Documentation Creation: 'Articles/Documentation Series/automating_documentation_creation.md'
-    - Dataform: 
-      - Dataform Column Descriptions: 'Articles/Dataform/dataform_column_descriptions.md'
-    - Airflow:
-      - Deploying Airflow locally with Docker: 'Articles/Airflow Composer/running_airflow_locally_docker.md'
-  # - Airflow Helper:
-  # - Dataform Helper:
-  # - GCP Helper:
-  # - Terraform Helper:
-  # - Docker Helper:
-  # - Streamlit Helper:
-  # - Sharepoint Helper:
-
-
 plugins:
   - mermaid2
   - search:
@@ -79,6 +47,46 @@ plugins:
       caption_position: bottom
       background: white
       shadow: true
+  - mkdocstrings:
+      handlers:
+        python:  
+          ignore_errors: true
+          paths: 
+            - "docs/airflow-helper"
+            - "docs/dataform-helper"
+
+nav:
+  - Home: 
+    - index: 'index.md'
+    - Markdown:
+      - index: 'Home/Markdown/index.md'
+      - Getting Started: 'Home/Markdown/getting_started.md'
+      - Cheat Sheet: 'Home/Markdown/basic_cheat_sheet.md'
+      - Examples: 'Home/Markdown/formatting_examples.md'
+    - mkdocs overview:
+      - mkdocs Material: 'Home/mkdocs/mkdocs_material.md'
+      - Mermaid: 'Home/mkdocs/mkdocs_mermaid.md'
+      - Grids: 'Home/mkdocs/mkdocs_grids.md'
+  - Articles: 
+    - index: 'Articles/index.md'
+    - Documentation Series: 
+      - Central Documentation Overview: 'Articles/Documentation Series/central_docs_methodology.md'
+      - Central Documentation Technical Overview: 'Articles/Documentation Series/central_docs_technical.md'
+      - Automating Data Dictionaries: 'Articles/Documentation Series/automating_data_dictionaries.md'
+      - Automating Documentation Creation: 'Articles/Documentation Series/automating_documentation_creation.md'
+    - Dataform: 
+      - Dataform Column Descriptions: 'Articles/Dataform/dataform_column_descriptions.md'
+    - Airflow:
+      - Deploying Airflow locally with Docker: 'Articles/Airflow Composer/running_airflow_locally_docker.md'
+  - Airflow Helper: '!include ./docs/airflow-helper/mkdocs.yml'
+  - Dataform Helper: '!include ./docs/dataform-helper/mkdocs.yml'
+
+  # - Dataform Helper:
+  # - GCP Helper:
+  # - Terraform Helper:
+  # - Docker Helper:
+  # - Streamlit Helper:
+  # - Sharepoint Helper:
 
 exclude_docs: |
   !.docs/
