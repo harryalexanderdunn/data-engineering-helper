@@ -4,3 +4,6 @@
 [submodule "docs/dataform-helper"]
 	path = docs/dataform-helper
 	url = https://github.com/harryalexanderdunn/dataform-helper.git
+[submodule "docs/streamlit-helper"]
+	path = docs/streamlit-helper
+	url = https://github.com/harryalexanderdunn/streamlit-helper.git
