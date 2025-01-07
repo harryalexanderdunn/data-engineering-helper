@@ -53,7 +53,7 @@ plugins:
           ignore_errors: true
           paths: 
             - "docs/airflow-helper"
-            - "docs/dataform-helper"
+            - "docs/bq-dataform-helper"
             - "docs/streamlit-helper"
 
 nav:
@@ -80,7 +80,7 @@ nav:
     - Airflow:
       - Deploying Airflow locally with Docker: 'Articles/Airflow Composer/running_airflow_locally_docker.md'
   - Airflow Helper: '!include ./docs/airflow-helper/mkdocs.yml'
-  - Dataform Helper: '!include ./docs/dataform-helper/mkdocs.yml'
+  - Dataform Helper: '!include ./docs/bq-dataform-helper/mkdocs.yml'
   - Streamlit Helper: '!include ./docs/streamlit-helper/mkdocs.yml'
 
   # - Dataform Helper:
