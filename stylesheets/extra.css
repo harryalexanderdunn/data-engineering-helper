@@ -1,0 +1,13 @@
+.md-grid {
+  max-width: 90%; 
+  }
+
+.md-header {
+  --md-primary-fg-color: rgb(39,75,99);
+}
+
+:root {
+  --md-primary-fg-color: rgb(51,102,153);
+}
+
+/* 103, 110, 121 */

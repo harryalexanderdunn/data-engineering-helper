@@ -1,0 +1,20 @@
+site_name: dataform-helper
+edit_uri: edit/main/docs/
+
+nav:
+  - Home: 'overview.md'
+  - Dataform Automated Schemas: 'dataform_column_descriptions.md'
+
+theme:
+  name: material
+plugins:
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [src]
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true

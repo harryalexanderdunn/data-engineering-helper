@@ -1,0 +1,22 @@
+site_name: streamlit-helper
+edit_uri: edit/main/docs/
+
+nav:
+  - Home: 'overview.md'
+  - Deploying to App Engine: 'deploying_to_app_engine.md'
+  - Deploying to Cloud Run: 'deploying_to_cloud_run.md'
+  - Setting Up Authentication: 'setting_up_auth.md'
+
+theme:
+  name: material
+plugins:
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [src]
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true

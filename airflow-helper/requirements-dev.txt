@@ -1,0 +1,23 @@
+# LOCAL DEVELOPMENT REQUIREMENTS
+# ------------------------------
+# Contains any dependencies for local development,
+# in addition to those provided by default in the devcontainer.
+
+pytest
+ruff
+
+# airflow libraries from composer setup 
+apache-airflow==2.7.3
+apache-airflow-providers-sendgrid
+apache-airflow-providers-google
+google-cloud-secret-manager
+google-re2==1.0
+
+# documentation as code
+google-cloud-bigquery
+google-cloud
+mkdocs
+mkdocstrings
+mkdocstrings-python
+lazydocs==0.4.8
+pandas

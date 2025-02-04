@@ -1,0 +1,24 @@
+site_name: airflow-helper
+edit_uri: edit/main/docs/
+# docs_dir: ./docs
+
+nav:
+  - Home: 'overview.md'
+  - Airflow Setup: 'airflow_setup.md'
+  - Useful Code: 'the_dag_code.md'
+  - Automation:
+      - Data Dictionary Creation: 'automation/data_dictionary.md'
+
+theme:
+  name: material
+plugins:
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [src]
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true

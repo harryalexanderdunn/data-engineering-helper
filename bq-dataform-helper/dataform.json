@@ -1,0 +1,7 @@
+{
+    "warehouse": "bigquery",
+    "defaultSchema": "dataset",
+    "assertionSchema": "assertion_dataset",
+    "defaultDatabase": "gcp-project",
+    "defaultLocation":"EU"
+}
