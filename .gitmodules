@@ -7,3 +7,6 @@
 [submodule "docs/bq-dataform-helper"]
 	path = docs/bq-dataform-helper
 	url = https://github.com/harryalexanderdunn/dataform-helper.git
+[submodule "docs/gcp-helper"]
+	path = docs/gcp-helper
+	url = https://github.com/harryalexanderdunn/gcp-helper.git

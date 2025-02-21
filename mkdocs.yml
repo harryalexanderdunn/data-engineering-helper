@@ -55,6 +55,7 @@ plugins:
             - "docs/airflow-helper"
             - "docs/bq-dataform-helper"
             - "docs/streamlit-helper"
+            - "docs/gcp-helper"
 
 nav:
   - Home: 
@@ -82,6 +83,7 @@ nav:
   - Airflow Helper: '!include ./docs/airflow-helper/mkdocs.yml'
   - Dataform Helper: '!include ./docs/bq-dataform-helper/mkdocs.yml'
   - Streamlit Helper: '!include ./docs/streamlit-helper/mkdocs.yml'
+  - Google Cloud Platform Helper: '!include ./docs/gcp-helper/mkdocs.yml'
 
   # - Dataform Helper:
   # - GCP Helper:
