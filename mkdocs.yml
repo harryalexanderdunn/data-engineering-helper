@@ -18,6 +18,9 @@
 site_name: Data Engineering Helper Documentation & Guide
 site_description: 'Central Repo for all thing Data Engineering & Cloud Engineering (GCP & Python)'
 site_author: 'Harry Dunn'
+repo_name: "harryalexanderdunn/data-engineering-helper"
+repo_url: https://github.com/harryalexanderdunn/data-engineering-helper
+site_url: https://harryalexanderdunn.github.io/data-engineering-helper/
 
 copyright: |
   &copy; Author: Harry Dunn
@@ -161,6 +164,14 @@ theme:
       squirell: octicons/squirrel-16
       goal: octicons/goal-16
       rocket: octicons/rocket-16
+  social:
+    - icon: material/home
+      link: 'https://harryalexanderdunn.github.io/data-engineering-helper/'
+    - icon: material/github
+      link: 'https://github.com/harryalexanderdunn/data-engineering-helper'
+    - icon: fontawesome/brands/medium
+      link: 'https://medium.com/@harryalexdunn'
+
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |

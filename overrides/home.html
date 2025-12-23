@@ -1,0 +1,167 @@
+{% extends "main-styles.html" %}
+
+<!-- Render hero under tabs -->
+{% block tabs %}
+{{ super() }}
+
+<!-- Hero for landing page -->
+
+<section class="first-gradient-body w-100">
+  <div class="md-grid container-row pt-1 pt-lg-5 my-4">
+    <div class="px-3 ctx-header-text container">
+      <div class="container-row">
+        <p class="h1 text-xs-center pb-3">
+          Data Engineering Documentation
+        </p>
+      </div>
+      <p class="h3 text-xs-center">This site provides comprehensive documentation and practical guidance for data engineering on GCP using Python. You'll find architecture best practices, tooling recommendations, and ready to use code examples designed to help you build reliable data pipelines and get productive quickly.</p>
+      <div class="container-row container-xs">
+        <button
+          type="button"
+          title="{{ page.next_page.title | e }}"
+          onclick="location.href='./Articles/'"
+          class="btn-dark btn-xl-large btn-lg-large mx-3  mt-3 my-md-5 my-lg-5 my-xl-5 box-shadow"
+        >
+            Articles
+        </button>
+        <button
+          type="button"
+          title="{{ page.next_page.title | e }}"
+          onclick="window.open('https://medium.com/@harryalexdunn', '_blank')"
+          class="btn-warning btn-xl-large btn-lg-large mx-3 mt-3 my-md-5 my-lg-5 my-xl-5 box-shadow"
+        >
+          Follow me on Medium
+        </button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="second-gradient-body w-100 pb-5">
+  
+  <div class="container-row-lg container-row-xl container">
+    <div class="container">
+      <div class="container ctx-what-is mx-auto">
+        <div class="container text-dark">
+
+          <!-- Two-column layout -->
+          <div style="
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 128px;
+            align-items: center;
+            margin-top: 24px;
+          ">
+            <!-- COLUMN: Logo -->
+            <div style="text-align: centre;">
+              <img src="images/logo_white.png"
+                  style="width: 180px; height: auto; object-fit: contain;" />
+            </div>
+
+            <!-- COLUMN: Feature grid -->
+            <div class="feature-grid" style="
+              display: grid;
+              grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+              gap: 24px;
+            ">
+              <div class="feature-box p-3 box-shadow-sm rounded bg-white h3 text-xs">
+                <img src="images/check-ok.svg" width="22" height="22" class="mr-2" /> Python
+              </div>
+
+              <div class="feature-box p-3 box-shadow-sm rounded bg-white h3 text-xs">
+                <img src="images/check-ok.svg" width="22" height="22" class="mr-2" /> Markdown
+              </div>
+
+              <div class="feature-box p-3 box-shadow-sm rounded bg-white h3 text-xs">
+                <img src="images/check-ok.svg" width="22" height="22" class="mr-2" /> MkDocs
+              </div>
+
+              <div class="feature-box p-3 box-shadow-sm rounded bg-white h3 text-xs">
+                <img src="images/check-ok.svg" width="22" height="22" class="mr-2" /> Airflow
+              </div>
+
+              <div class="feature-box p-3 box-shadow-sm rounded bg-white h3 text-xs">
+                <img src="images/check-ok.svg" width="22" height="22" class="mr-2" /> Dataform
+              </div>
+
+              <div class="feature-box p-3 box-shadow-sm rounded bg-white h3 text-xs">
+                <img src="images/check-ok.svg" width="22" height="22" class="mr-2" /> WSL2 (Linux)
+              </div>
+
+              <div class="feature-box p-3 box-shadow-sm rounded bg-white h3 text-xs">
+                <img src="images/check-ok.svg" width="22" height="22" class="mr-2" /> GCP Connectors
+              </div>
+
+              <div class="feature-box p-3 box-shadow-sm rounded bg-white h3 text-xs">
+                <img src="images/check-ok.svg" width="22" height="22" class="mr-2" /> Docker
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br></br>
+</section>
+
+<section class="third-dark-body w-100 pb-5">
+  <div class="container py-5 my-5">
+    <div class="container-row">
+      <div style="order:0; flex: 50%; display:flex; justify-content:center; padding-left:40px; padding-right:20px;">
+          <img src="images/me.jpg" class="image-centre" style="max-width:80%; height:75%;" />
+      </div>
+      <div style="order:0; flex: 50%; padding-left:20px; padding-right:20px;" class="d-lg">
+        <div class="card-rainbow second-gradient-body px-5 py-3" style="order:1; flex: 100%;">
+          <div class="container ctx-card-white-1 text-dark h3">
+            <p class="my-3">
+              I am a <span class="t-b">Google Certified Principal Data Engineer</span> with a passion for building data products and services throughout the software development cycle. Experience of managing teams and leading collaborative data product and service designs to find the perfect cloud solution. This includes; 
+            </p>
+            <p class="my-3">
+              <span class="t-b">Designing, building, deploying and maintaining</span> large data transformation pipelines in Kubernetes & Airflow.
+            </p>
+            <p class="my-3">
+              Knowledge of <span class="t-b">cloud computing patterns</span>, workflows & services and how they relate to big data platforms.
+            </p>
+            <p class="my-3">
+              <span class="t-b">Deploying</span> data solutions and cloud infrastructure via CI/CD pipelines. <span class="t-b">Maintaining</span> and managing Kubernetes clusters through infrastructure as code.
+            </p>
+            <p class="my-3">
+              Experienced in <span class="t-b">BigQuery, Python</span> programming language and development with cloud SDK & REST APIs.
+            </p>
+            <p class="my-3">
+              Line Management & Data Engineering mentoring for large teams
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+</section>
+
+<section class="four-gray-body w-100">
+  <div class="md-grid container-row pt-4 my-4">
+    <div class="card-white py-3 mx-xs-3 mx-sm-3 mx-4 mx-xl-0">
+      <div class="container-row">
+
+        <!-- Headline -->
+        <div class="container ctx-card-white-1 pt-3 text-align-center">
+          <div class="d-sm">
+            <p class="h2 Telegraf-UltraBold text-dark mx-auto mt-4">
+              Blueprints, best practices, and code
+            </p>
+            <p class="h2 Telegraf-UltraBold text-pink mx-auto my-4">
+              for modern data engineering tech stacks
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
