@@ -63,15 +63,14 @@ plugins:
 nav:
   - Home: 
     - index: 'index.md'
-    - Markdown:
-      - index: 'Home/Markdown/index.md'
-      - Getting Started: 'Home/Markdown/getting_started.md'
-      - Cheat Sheet: 'Home/Markdown/basic_cheat_sheet.md'
-      - Examples: 'Home/Markdown/formatting_examples.md'
-    - mkdocs overview:
-      - mkdocs Material: 'Home/mkdocs/mkdocs_material.md'
-      - Mermaid: 'Home/mkdocs/mkdocs_mermaid.md'
-      - Grids: 'Home/mkdocs/mkdocs_grids.md'
+  - Markdown:
+    - index: 'Home/Markdown/index.md'
+    - Getting Started: 'Home/Markdown/getting_started.md'
+    - Cheat Sheet: 'Home/Markdown/basic_cheat_sheet.md'
+    - Examples: 'Home/Markdown/formatting_examples.md'
+    - mkdocs Material: 'Home/mkdocs/mkdocs_material.md'
+    - Mermaid: 'Home/mkdocs/mkdocs_mermaid.md'
+    - Grids: 'Home/mkdocs/mkdocs_grids.md'
   - Articles: 
     - index: 'Articles/index.md'
     - Documentation Series: 
